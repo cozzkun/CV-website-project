@@ -1,0 +1,92 @@
+h1 {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 500%;
+}
+
+nav {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 90px;
+  margin-bottom: 30px;
+}
+
+.navbar {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+}
+
+.navbar li {
+  background-color: #cfb5f3;
+  border: 2px solid black;
+  height: 30px;
+  flex: 1 1 0%;
+  padding-top: 13px;
+  padding-left: 65px;
+}
+
+.navbar li:nth-child(3) {
+  padding-left: 100px;
+}
+
+.navbar li:nth-child(4) {
+  padding-left: 85px;
+}
+
+h2 {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 50px;
+  background: linear-gradient(
+    to bottom,
+    #bbbbbb 0%,
+    #bbbbbb 10%,
+    #d6d6d6 10%,
+    #d6d6d6 100%
+  );
+}
+
+div,
+.section-container {
+  color: black;
+  background-color: #bbbbbb;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 7px;
+  margin-bottom: 30px;
+}
+
+.specific-section {
+  background-color: #ff705c;
+}
+
+div {
+  margin-bottom: 20px;
+}
+
+p {
+  color: black;
+  background-color: #ff705c;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 7px;
+}
+
+table {
+  background-color: #ff705c;
+}
+
+footer {
+  color: black;
+  background-color: #ffee52;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 7px;
+}
+
+.message {
+  background-color: #ffee52;
+  border: 0px solid black;
+}
