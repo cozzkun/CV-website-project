@@ -13,7 +13,9 @@ nav {
 
 .navbar {
   display: flex;
-  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
   list-style: none;
   padding: 0;
 }
@@ -23,16 +25,6 @@ nav {
   border: 2px solid black;
   height: 30px;
   flex: 1 1 0%;
-  padding-top: 13px;
-  padding-left: 65px;
-}
-
-.navbar li:nth-child(3) {
-  padding-left: 100px;
-}
-
-.navbar li:nth-child(4) {
-  padding-left: 85px;
 }
 
 h2 {
