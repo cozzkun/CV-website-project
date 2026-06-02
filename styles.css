@@ -1,3 +1,7 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 h1 {
   color: black;
   font-family: Arial, Helvetica, sans-serif;
@@ -21,10 +25,14 @@ nav {
 }
 
 .navbar li {
-  background-color: #cfb5f3;
+  align-self: center;
+  background-color: rgb(213, 246, 213);
   border: 2px solid black;
   height: 30px;
   flex: 1 1 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 h2 {
@@ -49,11 +57,10 @@ div,
   background-color: #bbbbbb;
   font-family: Arial, Helvetica, sans-serif;
   padding: 7px;
-  margin-bottom: 30px;
 }
 
 .specific-section {
-  background-color: #ff705c;
+  background-color: #e1e1e0;
 }
 
 div {
@@ -62,13 +69,41 @@ div {
 
 p {
   color: black;
-  background-color: #ff705c;
   font-family: Arial, Helvetica, sans-serif;
   padding: 7px;
 }
 
 table {
-  background-color: #ff705c;
+  border-collapse: collapse;
+}
+
+th {
+  font-size: 120%;
+}
+
+th,
+td {
+  padding: 5px;
+  border: 1px solid darkblue;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(211, 211, 211);
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(213, 246, 213);
+}
+
+.experience-description {
+  font-size: 85%;
+}
+
+.skills-list ul {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  gap: 2vh;
 }
 
 footer {
@@ -81,4 +116,20 @@ footer {
 .message {
   background-color: #ffee52;
   border: 0px solid black;
+}
+
+.example-div {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+.first-div {
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.second-div {
+  margin-top: 10px;
+  display: inline-block;
 }
