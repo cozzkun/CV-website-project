@@ -18,7 +18,7 @@ h2 {
 }
 
 nav {
-  margin: 1;
+  margin: 0;
 }
 
 nav ul {
@@ -46,16 +46,19 @@ nav {
 }
 
 nav ul {
+  gap: 0.2rem;
 }
 
 nav li {
-  display: flex;
-  flex: 1; /* fill space within <nav> */
+  flex: 1; /* box to fill space within <nav> */
 }
 
+/* styling the actual content within <li> */
 nav a {
+  display: flex;
   width: 100%;
   height: 100%;
+  flex: 1; /* fill space within <nav> */
   justify-content: center;
   align-items: center;
 }
