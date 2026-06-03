@@ -6,15 +6,15 @@ body {
 }
 
 main {
-  font-size: 1.1rem;
+  font-size: calc(1rem + 0.2vw);
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: calc(3rem + 3vw);
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: calc(2rem + 1vw);
 }
 
 nav {
@@ -24,7 +24,6 @@ nav {
 nav ul {
   list-style: none;
   padding: 0;
-  justify-content: center;
   display: flex;
   /* check the above with Harnoor if it automatically aligns in a row 
   because it 'flexes' within the box of <nav> in my understanding*/
@@ -35,6 +34,15 @@ nav a {
   color: white;
   justify-self: center;
   align-items: center;
+}
+
+footer {
+  font-size: calc(1rem + 0.2vw);
+}
+
+footer ul {
+  list-style: none;
+  margin-left: -2.4rem;
 }
 
 /* Mobile Layout */
@@ -69,4 +77,33 @@ nav a {
 
 .skills-list li {
   margin: 2rem 0;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+}
+
+footer li {
+  flex: 1;
+  margin: 1rem 0; /*could gap be used instead? */
+}
+
+/* Middle Layout */
+@media screen and (width > 800px) {
+  form {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
