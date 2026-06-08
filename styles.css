@@ -41,6 +41,11 @@ h2 {
   margin-left: -2.4rem;
 }
 
+.icon {
+  width: calc(20px + 1vw);
+  height: calc(20px + 1vw);
+}
+
 .references {
   font-size: calc(1rem + 0.2vw);
   list-style: none;
@@ -74,7 +79,7 @@ h2 {
   align-items: center;
 }
 
-.skills-list ul {
+.skills-list {
   margin-left: -1rem;
 }
 
@@ -86,11 +91,6 @@ h2 {
   display: flex;
   margin: 1rem 0;
   align-items: center;
-}
-
-.icon {
-  width: calc(20px + 1vw);
-  height: calc(20px + 1vw);
 }
 
 .contact-me label {
@@ -113,6 +113,24 @@ h2 {
   form {
     display: flex;
     gap: 0.5rem;
+  }
+
+  .skills-list {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .contact-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .contact-info div {
+    display: inline-flex;
+    flex: 1;
   }
 
   .references {
