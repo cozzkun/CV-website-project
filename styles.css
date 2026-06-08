@@ -29,13 +29,6 @@ nav ul {
   because it 'flexes' within the box of <nav> in my understanding*/
 }
 
-nav a {
-  background-color: black;
-  color: white;
-  justify-self: center;
-  align-items: center;
-}
-
 footer {
   font-size: calc(1rem + 0.2vw);
 }
@@ -106,4 +99,25 @@ footer li {
     flex-direction: row;
     flex-wrap: wrap;
   }
+}
+
+nav a {
+  background-color: black;
+  color: white;
+  justify-self: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out 0s;
+}
+
+nav a:hover {
+  color: red;
+  transform: scale(2);
+}
+
+nav a:focus {
+  color: yellow;
+}
+
+#main {
+  background-color: green;
 }
