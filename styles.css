@@ -36,6 +36,11 @@ h2 {
   align-items: center;
 }
 
+.contact-info {
+  list-style: none;
+  margin-left: -2.4rem;
+}
+
 .references {
   font-size: calc(1rem + 0.2vw);
   list-style: none;
@@ -75,6 +80,17 @@ h2 {
 
 .skills-list li {
   margin: 2rem 0;
+}
+
+.contact-info div {
+  display: flex;
+  margin: 1rem 0;
+  align-items: center;
+}
+
+.icon {
+  width: calc(20px + 1vw);
+  height: calc(20px + 1vw);
 }
 
 .contact-me label {
