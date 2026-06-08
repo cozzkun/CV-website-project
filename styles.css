@@ -17,11 +17,11 @@ h2 {
   font-size: calc(2rem + 1vw);
 }
 
-nav {
+.navbar {
   margin: 0;
 }
 
-nav ul {
+.navbar ul {
   list-style: none;
   padding: 0;
   display: flex;
@@ -29,33 +29,38 @@ nav ul {
   because it 'flexes' within the box of <nav> in my understanding*/
 }
 
-footer {
-  font-size: calc(1rem + 0.2vw);
+.navbar a {
+  background-color: black;
+  color: white;
+  justify-self: center;
+  align-items: center;
 }
 
-footer ul {
+.references {
+  font-size: calc(1rem + 0.2vw);
+  list-style: none;
   list-style: none;
   margin-left: -2.4rem;
 }
 
 /* Mobile Layout */
 
-nav {
+.navbar {
   display: block;
   position: sticky;
   top: 0;
 }
 
-nav ul {
+.navbar ul {
   gap: 0.2rem;
 }
 
-nav li {
+.navbar li {
   flex: 1; /* box to fill space within <nav> */
 }
 
 /* styling the actual content within <li> */
-nav a {
+.navbar a {
   display: flex;
   width: 100%;
   height: 100%;
@@ -72,17 +77,17 @@ nav a {
   margin: 2rem 0;
 }
 
-label {
+.contact-me label {
   display: block;
   margin: 0.5rem 0;
 }
 
-footer ul {
+.references {
   display: flex;
   flex-direction: column;
 }
 
-footer li {
+.references li {
   flex: 1;
   margin: 1rem 0; /*could gap be used instead? */
 }
@@ -94,30 +99,13 @@ footer li {
     gap: 0.5rem;
   }
 
-  footer ul {
+  .references {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
 }
 
-nav a {
-  background-color: black;
-  color: white;
-  justify-self: center;
-  align-items: center;
-  transition: transform 0.3s ease-in-out 0s;
-}
-
-nav a:hover {
-  color: red;
-  transform: scale(2);
-}
-
-nav a:focus {
-  color: yellow;
-}
-
-#main {
-  background-color: green;
+/* Widescreen Layout */
+@media screen and (width > 1300px) {
 }
