@@ -93,6 +93,12 @@ h2 {
   margin-top: -0.25rem;
 }
 
+img {
+  display: flex;
+  justify-self: center;
+  margin: 1rem 0;
+}
+
 .skills-list {
   margin-left: -1rem;
 }
@@ -129,6 +135,21 @@ h2 {
 @media screen and (width > 800px) {
   .content {
     max-width: 1060px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "aa bb";
+  }
+
+  .grid div {
+    grid-area: aa;
+  }
+
+  .grid img {
+    grid-area: bb;
+    margin-top: -2.5rem;
   }
 
   .skills-list div {
