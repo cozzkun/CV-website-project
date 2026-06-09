@@ -1,20 +1,31 @@
 /* General Styling */
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   padding: 0 20px 20px 20px;
+  background-color: blanchedalmond;
+  justify-self: center;
 }
 
 main {
   font-size: 16px;
 }
 
+.content {
+  background-color: white;
+  padding: 0.75rem;
+}
+
+section {
+  border-bottom: 1px solid #000000;
+}
+
 h1 {
-  font-size: 3rem;
+  font-size: calc(3rem + 1.5vw);
 }
 
 h2 {
-  font-size: 2.25rem;
+  font-size: 2rem;
 }
 
 .navbar {
@@ -38,7 +49,7 @@ h2 {
 
 .contact-info {
   list-style: none;
-  margin-left: -2.4rem;
+  margin-left: -2rem;
 }
 
 .icon {
@@ -47,10 +58,9 @@ h2 {
 }
 
 .references {
-  font-size: calc(1rem + 0.2vw);
+  font-size: 1rem;
   list-style: none;
-  list-style: none;
-  margin-left: -2.4rem;
+  margin-left: -1.5rem;
 }
 
 /* Mobile Layout */
@@ -79,6 +89,10 @@ h2 {
   align-items: center;
 }
 
+.about-me h2 {
+  margin-top: -0.25rem;
+}
+
 .skills-list {
   margin-left: -1rem;
 }
@@ -101,15 +115,22 @@ h2 {
 .references {
   display: flex;
   flex-direction: column;
+  max-width: 300px;
 }
 
 .references li {
   flex: 1;
   margin: 1rem 0; /*could gap be used instead? */
+  padding: 12px 0;
+  border-bottom: 1px solid #000000;
 }
 
 /* Middle Layout */
 @media screen and (width > 800px) {
+  .content {
+    max-width: 1060px;
+  }
+
   form {
     display: flex;
     gap: 0.5rem;
@@ -138,8 +159,13 @@ h2 {
     flex-direction: row;
     flex-wrap: wrap;
   }
+
+  .references a {
+    border-right: 1px solid;
+  }
 }
 
 /* Widescreen Layout */
 @media screen and (width > 1300px) {
 }
+/* Widescreen Layout not needed */
