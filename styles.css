@@ -136,11 +136,27 @@ h2 {
     gap: 0.5rem;
   }
 
-  .skills-list {
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 1rem;
+  .skills-list div {
+    display: flex;
+  }
+
+  .skills-list li {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .skillset-1 li {
+    border-right: 1px solid #000000;
+  }
+
+  .skillset-1 li:last-child {
+    border-right: none;
+  }
+
+  .skillset-2 {
+    border-right: 1px solid #000000;
+    border-left: 1px solid #000000;
   }
 
   .contact-info {
@@ -152,16 +168,25 @@ h2 {
   .contact-info div {
     display: inline-flex;
     flex: 1;
+    justify-content: center;
   }
 
   .references {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    max-width: none;
   }
 
-  .references a {
-    border-right: 1px solid;
+  .references li {
+    display: flex;
+    padding: 0;
+    border-bottom: none;
+    border-right: 1px solid #000000;
+    justify-content: center;
+  }
+
+  .references li:last-child {
+    border-right: none;
   }
 }
 
