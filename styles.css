@@ -131,11 +131,6 @@ h2 {
     max-width: 1060px;
   }
 
-  form {
-    display: flex;
-    gap: 0.5rem;
-  }
-
   .skills-list div {
     display: flex;
   }
@@ -169,6 +164,20 @@ h2 {
     display: inline-flex;
     flex: 1;
     justify-content: center;
+  }
+
+  .form {
+    display: flex;
+  }
+
+  .field {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+  }
+
+  .form label {
+    margin-right: 0.5rem;
   }
 
   .references {
