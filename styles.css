@@ -20,6 +20,10 @@ section {
   border-bottom: 1px solid #000000;
 }
 
+section:last-child {
+  border-bottom: none;
+}
+
 h1 {
   font-size: calc(3rem + 1.5vw);
 }
